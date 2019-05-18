@@ -1,12 +1,15 @@
 body {
   background: #9ca0a8;
 }
+.bear {
+  position: relative;
+}
 .window {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   position: relative;
-  margin: 20px auto;
+  margin: 10px auto;
   background: white;
   
   clip-path: circle(50%);
@@ -29,10 +32,16 @@ h2 {
   text-shadow: 2px 2px #777;
   color: #333;
 }
-.bear {
-  position: relative;
-}
 
+@media screen and (max-width: 900px) {
+  h2 {
+    margin: 10px;
+  }
+  .bear {
+    height: 280px;
+    transform: scale(0.8);
+  }
+}
 /* BEAR STYLES */ 
 
 .head {
