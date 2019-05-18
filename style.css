@@ -1,0 +1,123 @@
+body {
+  background: #9ca0a8;
+}
+.window {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px auto;
+  background: white;
+  
+  clip-path: circle(50%);
+}
+input {
+  display: block;
+  margin: auto;
+	width: 300px;
+	font-size: 20px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+/* BEAR STYLES */ 
+
+.head {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+  background: #a3601b;
+  border-radius: 50%;
+}
+.ear {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background: #754412;
+  border-top-left-radius: 30% 40%;
+  border-top-right-radius: 70% 60%; 
+  border-bottom-right-radius: 40% 40%; 
+  border-bottom-left-radius: 10% 50%;
+}
+.left-ear {
+  transform: scale(-1.1, 1.1) rotate(45deg);
+}
+.right-ear {
+  right: 0;
+  transform: scale(1.1, 1.1) rotate(45deg);
+}
+.jaws {
+  width: 70px;
+  height: 80px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35px;
+  
+  background: #ffdf80;
+  border-top-left-radius: 30% 80%;
+  border-top-right-radius: 30% 80%;
+  border-bottom-left-radius: 40% 20%;
+  border-bottom-right-radius: 40% 20%;
+}
+.nose {
+  width: 40px;
+  height: 25px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  
+  background: black;
+  border-radius: 30%;
+  border-bottom-left-radius: 45% 60%;
+  border-bottom-right-radius: 45% 60%;
+}
+.eyes {
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  top: 44%;
+  left: 50%;
+  margin-left: -30px;
+  z-index: 1;
+}
+.eye {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+.eye::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  background: white;
+}
+.right-eye {
+  right: 0;
+}
+.neck {
+  width: 230px;
+  height: 90px;
+  background:  #754412;
+  opacity: 0.9;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-left: -115px;
+  z-index: -1;
+  border-top-left-radius: 20% 90%;
+  border-top-right-radius: 20% 90%;
+}
