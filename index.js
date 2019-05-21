@@ -2,11 +2,11 @@ const input = document.querySelector('input');
 const bearMovingParts = [document.querySelector('.nose'), document.querySelector('.eyes'), document.querySelector('.jaws')];
 
 input.addEventListener('input', (evt) => {
-  const style = createBearStyles (evt.target.value);
-  bearMovingParts.forEach(bearOrgan => setStyles(bearOrgan, style));
+  const style = createBearStyles(evt.target.value);
+  bearMovingParts.forEach(bearOrgan => setStylesForElement(bearOrgan, style));
 })
 
-function setStyles(elem, styles) {
+function setStylesForElement(elem, styles) {
   Object.entries(styles).forEach(styleItem => {
     elem.style[styleItem[0]] = styleItem[1];
   })
